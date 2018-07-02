@@ -2,6 +2,7 @@ html {
   font-size: 16px;
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
+  color: #4a4a4a;
 }
 h1 {
   font-size: 2.5rem;
@@ -38,12 +39,14 @@ p {
 .menu .gap {
   margin-right: 16px;
 }
+.menu a:hover {
+  color: #008df5;
+}
 
 /* Banner */
 .banner-mobile {
   display: none;
 }
-
 .banner {
   width: 100%;
   height: auto;
@@ -76,7 +79,16 @@ p {
   color: #ffffff;
   font-weight: 400;
 }
+.banner-btn a {
+  color: #ffffff;
+}
 
+.banner-btn:hover {
+  background-color: #4a4a4a;
+}
+.quote {
+  font-weight: 300;
+}
 /* "It doesn't hurt tu keep practicing" section */
 
 .keep-practicing-container {
@@ -130,12 +142,16 @@ p {
   display: flex;
   flex-direction: column;
 }
+.information-text a:hover {
+ color: #008df5;
+}
 .information-text h3 {
   margin: 16px 0px;
 }
 .information-text a {
   margin: 16px 0px;
 }
+
 .grey-background {
   background-color: #d8d8d8;
   padding-top: 16px;
@@ -255,7 +271,7 @@ footer {
 }
 .termsandprivacy li, a {
   display: inline;
-  color: #000000;
+  color: #4a4a4a;
   text-decoration: none;
   margin-left:8px;
 }
@@ -282,6 +298,7 @@ footer {
 .banner-mobile {
   display: flex;
   flex-direction: column;
+  font-size: 1.5rem;
 }
 .banner-image-mobile {
   width: 100%;
@@ -289,6 +306,7 @@ footer {
 }
 .banner-mobile p {
   margin: 32px 0px 24px 0px;
+  line-height: 1.5rem;
 }
 
 .learn-something-new-mobile {
@@ -322,7 +340,7 @@ footer {
 .information-text-mobile p {
   padding: 8px 0px;
 }
-.information-text-mobile span a {
+.information-text-mobile a {
  color: #008df5;
  margin-left: 0;
 }

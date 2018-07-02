@@ -1,15 +1,21 @@
 html {
   font-size: 16px;
-  padding-right: 2px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
 }
 h1 {
   font-size: 2.5rem;
+  font-weight: 700;
 }
 h3 {
   font-size: 1.5rem;
+  font-weight: 700;
 }
 body {
   overflow-x: hidden;
+}
+p {
+  line-height: 1.25rem;
 }
 .header-desktop {
   background-color: white;
@@ -24,6 +30,7 @@ body {
 .logo {
   display: flex;
   align-items: center;
+  font-weight: 500;
 }
 .grey-fonts {
   color: #4a4a4a;
@@ -59,14 +66,15 @@ body {
   padding-left: 24px;
 }
 .banner p {
+  line-height: 2rem;
   margin: 24px 0px;
 }
-
 .banner-btn {
   background-color: #4a4a4a;
   padding: 8px;
   text-align: center;
   color: #ffffff;
+  font-weight: 400;
 }
 
 /* "It doesn't hurt tu keep practicing" section */
@@ -303,14 +311,11 @@ footer {
   display: flex;
   flex-direction: column;
 }
-.information-image-container-mobile {
+.information-image-container-mobile, .information-image-mobile {
   width: 100%;
   height: auto;
 }
-.information-image-mobile {
-  width: 100%;
-  height: auto;
-}
+
 .information-text-mobile {
   padding: 16px;
 }
@@ -339,9 +344,9 @@ footer {
 }
 .learning-item-mobile {
   background-color: #d8d8d8;
-  padding: 16px 0px 24px 16px;
+  padding: 16px 0px 16px 16px;
   margin: 0px 16px 8px 16px;
-  font-weight: bold;
+  font-weight: 700;
 }
 /* Thesis mobile */
 .thesis-heading, .thesis-container { display: none; }

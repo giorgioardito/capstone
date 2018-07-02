@@ -11,7 +11,7 @@ h3 {
 body {
   overflow-x: hidden;
 }
-header {
+.header-desktop {
   background-color: white;
   display: flex;
   justify-content: space-between;
@@ -19,6 +19,8 @@ header {
   height: 64px;
   padding: 0 24px;
 }
+.header-mobile { display: none; }
+
 .logo {
   display: flex;
   align-items: center;
@@ -31,6 +33,10 @@ header {
 }
 
 /* Banner */
+.banner-mobile {
+  display: none;
+}
+
 .banner {
   width: 100%;
   height: auto;
@@ -41,7 +47,7 @@ header {
   align-items: center;
   font-size: 1.5rem
 }
-.banner .img-container {
+.img-container {
   width: 60%;
   height: auto;
 }
@@ -88,7 +94,7 @@ header {
 }
 
 /* News list column */
-
+.information-list-mobile {display:none;}
 .information-list {
   margin-top: 32px;
   display: flex;
@@ -132,6 +138,7 @@ header {
 }
 
 /* Start learning section */
+.learning-box-mobile { display: none; }
 .learning-box {
   display: block;
   width: 100%;
@@ -178,7 +185,7 @@ header {
   margin-top: 8px;
 }
 /* thesis */
-
+.thesis-container-mobile { display: none;}
 .thesis-container {
   width: 100%;
   height: auto;
@@ -244,3 +251,119 @@ footer {
   text-decoration: none;
   margin-left:8px;
 }
+
+@media only screen and (max-width:470px) {
+
+  /* Mobile Header and menu */
+.header-desktop {
+  display: none;
+}
+.header-mobile {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    height: 64px;
+    background-color: #ffffff;
+  }
+
+  /* Mobile Banner Mobile */
+.banner {
+    display: none;
+  }
+.banner-mobile {
+  display: flex;
+  flex-direction: column;
+}
+.banner-image-mobile {
+  width: 100%;
+  height: auto;
+}
+.banner-mobile p {
+  margin: 32px 0px 24px 0px;
+}
+
+.learn-something-new-mobile {
+  padding: 32px 16px;
+  background-color: #d8d8d8;
+}
+
+.keep-practicing {
+  display: none;
+}
+/* Mobile information list */
+.information-list {
+  display: none;
+}
+.information-list-mobile {
+  display: flex;
+  flex-direction: column;
+}
+.information-list-mobile .information-item-mobile {
+  display: flex;
+  flex-direction: column;
+}
+.information-image-container-mobile {
+  width: 100%;
+  height: auto;
+}
+.information-image-mobile {
+  width: 100%;
+  height: auto;
+}
+.information-text-mobile {
+  padding: 16px;
+}
+.information-text-mobile p {
+  padding: 8px 0px;
+}
+.information-text-mobile span a {
+ color: #008df5;
+ margin-left: 0;
+}
+
+/* Start learning mobile */
+.learning-box { display: none;}
+.learning-box-mobile {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 16px;
+  border-top: 1px solid #d8d8d8;
+  border-bottom: 1px solid #d8d8d8;
+  padding-bottom: 32px;
+}
+.learning-box-mobile h1 {
+  text-align: center;
+  padding: 16px 0px;
+}
+.learning-item-mobile {
+  background-color: #d8d8d8;
+  padding: 16px 0px 24px 16px;
+  margin: 0px 16px 8px 16px;
+  font-weight: bold;
+}
+/* Thesis mobile */
+.thesis-heading, .thesis-container { display: none; }
+.thesis-container-mobile {
+  display: flex;
+  flex-direction: column;
+}
+.thesis-heading-mobile {
+  width: 100%;
+  text-align: center;
+  margin: 32px 0px;
+}
+.thesis-video-mobile {
+  width: 100%;
+  height: auto;
+  margin-bottom: 24px;
+}
+footer {
+  margin: 16px 0px 16px 0px;
+  padding: 0;
+  border: none;
+  height: auto;
+}
+
+.termsandprivacy { display: none;}
